@@ -1,0 +1,361 @@
+.main_conteiner {
+	background-color: #ffffff;
+	font-family: 'Lato', sans-serif;
+}
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+.column	{
+	width: 1600px;
+	margin: 0 auto;
+	background-color: grey;
+}
+.conteiner {
+	width: 1180px;
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+.main__header {
+	background-color: magenta;
+	width: 100%;
+	margin: 0;
+	min-height: 880px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: -19px;
+	left: 169px;
+	width: 147px;
+	height: 136px;
+	text-align: center;
+}
+.control__conteiner {
+	
+	min-height: 100px;
+	background: grey;
+	margin: 20px 0 0 0;
+}
+.user-and-menu__contener {
+	padding: 10px 0 0 0;
+}
+.user-block {
+	background: lightgrey;
+	font-size: 14px;
+	font-weight: 900;
+	background: orange;
+	display: block;
+	float: right;
+}
+.user-block a {
+	text-decoration: none;
+	display: block;
+	background: green;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 16px 4px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.menu-conteiner {
+	float: right;
+	display: block;
+	margin: 16px 0 0 0;
+	width: 20px;
+	height: 20px;
+	background: pink;
+}
+/*############### PODGONKA MENU ###################*/
+
+nav {
+  width: 20px;
+  float: right;
+  color: rgba(0, 0, 0, 0.87);
+  /*-webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);*/
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+.menu-link {
+	background: yellow;
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.menu-link:hover {
+  background: #ffe082;
+}
+.menu-link:active {
+  background: #ffca28;
+}
+.navicon {
+	width: 20px;
+	background: lime;
+  padding: 24px 0px 23px 6px;
+  cursor: pointer;
+  /*-webkit-transform-origin: 32px 24px;
+          transform-origin: 32px 24px;*/
+}
+.navicon div {
+  position: relative;
+  width: 14px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+.navicon div:before, .navicon div:after {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+.navicon div:before {
+  top: -4px;
+}
+.navicon div:after {
+  top: 4px;
+}
+
+/*############### PODGONKA MENU ###################*/
+
+.gets {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	min-height: 436px;
+}
+.get-card {
+	text-align: justify;
+	width: 360px;
+	min-height: 436px;
+	margin: 0 40px 0 0px;
+}
+.get-card:nth-child(1) {
+	float: left;
+}
+.get-card:nth-child(2) {
+	display: inline-block;
+}
+.get-card:nth-child(3) {
+	float: right;
+	margin: 0;
+}
+.get__image {
+	width: 103px;
+	height: 103px;
+	margin: 101px auto 16px auto;
+	border: 2px solid #000000;
+	border-radius: 100%;
+}
+.get-card:nth-child(1) .get__image {
+	background: url("../img/icon/burger.png") no-repeat 50% 50%;
+}
+.get-card:nth-child(2) .get__image {
+	background: url("../img/icon/money.png") no-repeat 50% 50%;
+}
+.get-card:nth-child(3) .get__image {
+	background: url("../img/icon/sheff.png") no-repeat 50% 50%;
+}
+.card-name {
+	margin: 0 0 6px 0;
+	font-size: 18px;
+	letter-spacing: .9px;
+	text-align: center;
+}
+.header-line {
+	width: 88px;
+	height: 1px;
+	border: none;
+	background-color: #f57365;
+}
+.get-card .header-line {
+	margin: 0 auto 12px auto;
+}
+.card-discrition {
+margin: 0 0 30px 0;
+}
+.get-card p {
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0;
+	letter-spacing: .6px;
+}
+.get-card p:nth-child(2) {
+	letter-spacing: .5px;
+	word-spacing: .1px;
+}
+.get-card p:nth-child(3) {
+	text-align: center;
+}
+.promo-for-iphone {
+	width: 100%;
+	background: #f7f7f7;
+	min-height: 780px;
+	padding: 100px 0 0 0;
+	overflow: hidden;
+}
+.iphone__conteiner {
+	height: 780px;
+	background: url("../img/iPhone-5s.png") no-repeat 300% -15%; 
+	width: 540px;
+	float: left;
+	margin: 0px 100px 0 0;
+	overflow: hidden;
+}
+.app-image {
+	width: 442px;
+	margin: 160px 0 0 43px;
+	overflow: hidden;
+}
+.app-name {
+	font-size: 18px;
+	margin: 78px 0 6px 0;
+	letter-spacing: .9px;
+}
+.promo-for-iphone .header-line {
+	margin: 0 0 12px 0;
+}
+.app-descript {
+	margin: 0 0 24px 0;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: .5px;
+
+}
+.app-descript p:nth-child(1) {
+	margin: 0 0 26px 0;
+}
+.app-descript p:nth-child(2) {
+	margin: 0 0 26px 0;
+}
+.app-btn {
+	float: left;
+	display: block;
+	width: 112px;
+	height: 39px;
+	margin: 0 10px 0 0;
+	border-radius: 5px;
+	background: blue;
+}
+.app-btn:nth-child(1) {
+	background: url("../img/appstor-btn.png") no-repeat 50% 50%; 
+}
+.app-btn:nth-child(2) {
+	width: 120px;
+	background: url("../img/google-btn.png") no-repeat 50% 50%;	
+}
+.slider__conteiner {
+	width: 100%;
+	background: purple;
+	min-height: 461px;
+}
+.cuisines {
+	width: 100%;
+	background: white;
+	min-height: 461px;
+}
+.cuisines__name {
+	text-align: center;
+	padding: 80px 0 0 0;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: .9px;
+	margin: 20px 0 -1px 0;
+}
+
+.cuisines .conteiner {
+	width: 100%;
+	
+}
+.cuisines__conteiner {
+	margin: 39px 0 0 0;
+	overflow: hidden;
+}
+.cuisines__card {
+ width: 320px;
+ min-height: 225px;
+ display: block;
+ background: #f37264;
+ margin: 0;	
+ float: left;
+text-align: center;
+text-decoration: none;
+}
+.cuisines__card:nth-child(1) {
+	background: url("../img/italian.png") no-repeat 50% 50%;
+	
+	min-width: 320px;
+	max-width: 317px;
+}
+.cuisines__card:nth-child(2) {
+	background: url("../img/indian.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(3) {
+	background: url("../img/french.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(4) {
+	background: url("../img/stakehouse.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(5) {
+	background: url("../img/seafood.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(6) {
+	background: url("../img/sushi.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(7) {
+	background: url("../img/mexican.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(8) {
+	background: url("../img/chines.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(9) {
+	background: url("../img/pizza.png") no-repeat 50% 50%;
+}
+.cuisines__card:nth-child(10) {
+	background: url("../img/american.png") no-repeat 50% 50%;
+}
+.card-name__block {
+	margin: 70px 0 0 0;
+}
+.card-name__block h3 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 36px;
+	line-height: 36px;
+	letter-spacing: 1.5px;
+}
+.card-name__block i {
+	margin: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Times New Roman', sans-serif;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 0.7px;
+
+}
+.content-statistic {
+	width: 100%;
+	min-height: 176px;
+}
+.main__footer {
+	width: 100%;
+	min-height: 92px;
+}
