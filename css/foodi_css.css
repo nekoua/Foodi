@@ -8,56 +8,61 @@
 	clear: both;
 }
 .column	{
-	width: 1600px;
+	width: 1580px;
 	margin: 0 auto;
-	background-color: grey;
 }
 .conteiner {
 	width: 1180px;
 	margin: 0 auto;
-	background-color: lightgrey;
-}
-.main__header {
-	background-color: magenta;
-	width: 100%;
-	margin: 0;
-	min-height: 880px;
 	position: relative;
 }
+.main__header .conteiner {
+	width: 100%;
+}
+.main__header {
+	background: url("../img/main-image.jpg") no-repeat 50% 50%;
+	margin: 0 auto; 
+	min-height: 880px;
+	position: relative;
+	box-shadow: inset 50px -200px 180px -120px rgba(150,100,250,0.75);
+}
 .logo {
-	position: absolute;
+	position: relative;
 	top: -19px;
 	left: 169px;
 	width: 147px;
 	height: 136px;
 	text-align: center;
+	float: left;
 }
 .control__conteiner {
-	
 	min-height: 100px;
-	background: grey;
 	margin: 20px 0 0 0;
 }
 .user-and-menu__contener {
 	padding: 10px 0 0 0;
+	width: 1240px;
+	margin: 0 auto;
+	min-height: 60px;
 }
 .user-block {
-	background: lightgrey;
 	font-size: 14px;
 	font-weight: 900;
-	background: orange;
 	display: block;
 	float: right;
+	margin: 0 50px 0 0;
 }
 .user-block a {
 	text-decoration: none;
 	display: block;
-	background: green;
 	float: left;
 	margin: 0 20px 0 0;
 	padding: 16px 4px;
 	letter-spacing: 0.5px;
 	color: #ffffff;
+	
+}
+.user-block a:hover {
 	cursor: pointer;
 }
 .menu-conteiner {
@@ -67,71 +72,144 @@
 	width: 20px;
 	height: 20px;
 	background: pink;
+
+}
+.main__baner {
+	color: #ffffff;
+	position: absolute;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:500px;
+	min-height:300px;
+	margin: 271px 0 0 -250px;
+	text-align: center;
+}
+.slogan-one {
+	font-size: 36px;
+	line-height: 30px;
+	font-family: 'Times New Roman', sans-serif;
+	font-style: italic;
+	font-weight: 700;	
+	margin: 10px 0 0px 23px;
+	letter-spacing: 1.8px;
+	text-shadow: 1px 0px 90px rgba(0, 0, 0, 1);
+}
+.main__baner b {
+	font-size: 100px;
+	display: block;
+	margin: -1px 0 20px 0;
+	letter-spacing: 5px;
+	text-shadow: 1px 0px 90px rgba(0, 0, 0, 1);		
+}
+.btn-baner {
+	margin: 0 auto 38px auto;
+	display: block;
+	width: 200px;
+	border: 3px solid #ffffff;
+	border-radius: 4px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 18px 36px 24px 39px;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+.btn-baner:hover {
+	background: #ffffff;
+	color: black;
+}
+
+.slogan-two {
+	font-size: 14px;
+	letter-spacing: .7px;
+}
+.slogan-two a {
+
+	color: #ffffff;
+ font-weight: bold;
 }
 /*############### PODGONKA MENU ###################*/
 
 nav {
-  width: 20px;
-  float: right;
+  position: absolute;
+  z-index: 10;
+  right: 190px;
+  width: 300px;
   color: rgba(0, 0, 0, 0.87);
-  /*-webkit-clip-path: circle(24px at 30px 24px);
-  clip-path: circle(24px at 32px 24px);*/
+  -webkit-clip-path: circle(24px at 273px 24px);
+  clip-path: circle(24px at 273px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
   transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
 }
-nav:hover {
+
+nav:hover  {
   -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
+  transition-duration: 0.75s;
   -webkit-clip-path: circle(390px at 225px 24px);
   clip-path: circle(390px at 150px 24px);
+	
+}
+nav:hover .navicon {
+	background: #f3f3f3;	
 }
 .menu-link {
-	background: yellow;
+	background: #f3f3f3;
   display: block;
   line-height: 50px;
   padding: 0 20px;
   color: inherit;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.menu-link:hover {
-  background: #ffe082;
-}
-.menu-link:active {
-  background: #ffca28;
-}
+.menu-link:hover { background: #e9e9E9;; }
+.menu-link:active { background: #b9b9b9; }
 .navicon {
-	width: 20px;
-	background: lime;
-  padding: 24px 0px 23px 6px;
-  cursor: pointer;
-  /*-webkit-transform-origin: 32px 24px;
-          transform-origin: 32px 24px;*/
-}
-.navicon div {
+	z-index: 10;
   position: relative;
+  left: 246px;
   width: 14px;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.87);
+  padding: 24px 20px 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+  
+
 }
-.navicon div:before, .navicon div:after {
-  display: block;
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.87);
-  position: absolute;
+.navicon:hover {
+	background: #f3f3f3;
 }
-.navicon div:before {
+.navicon .burger {
+  position: relative;
+	width: 14px;
+	height: 2px;
+	margin: 0;
+	background: rgba(255, 255, 255, 0.87);
+}
+.navicon .burger:before,
+.navicon .burger:after {
+ display: block;
+	content: "";
+	width: 14px;
+	margin: 0;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.87);
+	position: absolute;
+	z-index: 10;
+}
+.navicon .burger:before {
   top: -4px;
 }
-.navicon div:after {
-  top: 4px;
+
+.navicon .burger:after { 
+	top: 4px;
 }
+
 
 /*############### PODGONKA MENU ###################*/
 
@@ -189,7 +267,7 @@ nav:hover {
 	margin: 0 auto 12px auto;
 }
 .card-discrition {
-margin: 0 0 30px 0;
+	margin: 0 0 30px 0;
 }
 .get-card p {
 	font-size: 16px;
@@ -285,24 +363,25 @@ margin: 0 0 30px 0;
 	
 }
 .cuisines__conteiner {
-	margin: 39px 0 0 0;
+	margin: 39px 0 50px 0;
 	overflow: hidden;
 }
 .cuisines__card {
- width: 320px;
- min-height: 225px;
- display: block;
- background: #f37264;
- margin: 0;	
- float: left;
-text-align: center;
-text-decoration: none;
+	/*min-width: 318px;
+	*/
+	width: 20%;
+	min-height: 225px;
+	display: block;
+	background: #f37264;
+	margin: 0;	
+	float: left;
+	text-align: center;
+	text-decoration: none;
 }
 .cuisines__card:nth-child(1) {
 	background: url("../img/italian.png") no-repeat 50% 50%;
 	
-	min-width: 320px;
-	max-width: 317px;
+	
 }
 .cuisines__card:nth-child(2) {
 	background: url("../img/indian.png") no-repeat 50% 50%;
@@ -340,6 +419,10 @@ text-decoration: none;
 	font-size: 36px;
 	line-height: 36px;
 	letter-spacing: 1.5px;
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+.card-name__block h3:hover {
+	color: #f37264;
 }
 .card-name__block i {
 	margin: 0;
@@ -349,13 +432,74 @@ text-decoration: none;
 	font-weight: bold;
 	line-height: 24px;
 	letter-spacing: 0.7px;
-
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
 }
 .content-statistic {
 	width: 100%;
-	min-height: 176px;
+	min-height: 126px;
+	
+}
+.stat__card {
+	float: left;
+}
+.stat__card:nth-child(1) {
+	margin: 8px 121px 0 0;
+}
+.stat__card:nth-child(2) {
+	margin: 8px 121px 0 0;
+}
+.stat__card:nth-child(3) {
+	margin: 8px 129px 0 0;
+}
+.stat__card:nth-child(4) {
+	margin: 8px 136px 0 0px;
+}
+.stat-numb:nth-child(4) {
+	margin: 0 0 0 6px;
+}
+.stat__card:nth-child(5) {
+	margin: 8px 0 0 0px;
+}
+.stat__card:nth-child(5) .stat-numb {
+	margin: 0 0 0 14px;
+}
+.stat-numb {
+	font-size: 36px;
+	line-height: 30px;
+	letter-spacing: 1.8px;
+	margin: 0px 0 0 0;
+}
+.stat-type {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 11px 0 0 0;
+	letter-spacing: .5px;
+	text-align: center;
+	color: grey;
 }
 .main__footer {
 	width: 100%;
 	min-height: 92px;
+	border-top: 1px solid lightgrey;
+	background-color: #f7f7f7:;
+}
+.footer-copyright {		
+	color: grey;
+}
+.copyright {
+	float: left;
+	font-size: 14px;
+	margin: 37px 0 0 0;
+	letter-spacing: -0.5px;
+}
+.author-link {
+	float: right;
+	margin: 24px 0 0 0;
+	font-size: 14px;
+	letter-spacing: 2.65px;
+}
+.author-link a {
+	text-decoration: none;
+	color: black;
 }
