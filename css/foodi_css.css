@@ -288,18 +288,20 @@ nav:hover .navicon {
 	min-height: 780px;
 	padding: 100px 0 0 0;
 	overflow: hidden;
+
 }
 .iphone__conteiner {
 	height: 780px;
-	background: url("../img/iPhone-5s.png") no-repeat 300% -15%; 
-	width: 540px;
+	background: url("../img/iPhone-5s.png") no-repeat 200% -15%; 
+	width: 548px;
 	float: left;
 	margin: 0px 100px 0 0;
 	overflow: hidden;
+
 }
 .app-image {
 	width: 442px;
-	margin: 160px 0 0 43px;
+	margin: 162px 0 0 68px;
 	overflow: hidden;
 }
 .app-name {
@@ -502,4 +504,27 @@ nav:hover .navicon {
 .author-link a {
 	text-decoration: none;
 	color: black;
+}
+@media screen  and (max-width: 980px) {
+	.iphone__conteiner {
+		display: none;
+
+	}
+	.app-name {
+		background: blue;
+	}
+	.get-card {
+		float: none;
+		display: block;
+	}
+	.get-card:nth-child(1) {
+	float: none;
+	}
+.get-card:nth-child(2) {
+	display: block;
+}
+.get-card:nth-child(3) {
+	float: none;
+	margin: 0;
+}
 }
