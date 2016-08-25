@@ -126,29 +126,29 @@
 .slogan-two a {
 
 	color: #ffffff;
- font-weight: bold;
+	font-weight: bold;
 }
 /*############### PODGONKA MENU ###################*/
 
 nav {
-  position: absolute;
-  z-index: 10;
-  right: 190px;
-  width: 300px;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-clip-path: circle(24px at 273px 24px);
-  clip-path: circle(24px at 273px 24px);
-  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+	position: absolute;
+	z-index: 10;
+	right: 190px;
+	width: 300px;
+	color: rgba(0, 0, 0, 0.87);
+	-webkit-clip-path: circle(24px at 273px 24px);
+	clip-path: circle(24px at 273px 24px);
+	-webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+	transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
 }
 
 nav:hover  {
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  -webkit-clip-path: circle(390px at 225px 24px);
-  clip-path: circle(390px at 150px 24px);
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-transition-duration: 0.75s;
+	transition-duration: 0.75s;
+	-webkit-clip-path: circle(390px at 225px 24px);
+	clip-path: circle(390px at 150px 24px);
 	
 }
 nav:hover .navicon {
@@ -156,36 +156,36 @@ nav:hover .navicon {
 }
 .menu-link {
 	background: #f3f3f3;
-  display: block;
-  line-height: 50px;
-  padding: 0 20px;
-  color: inherit;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	display: block;
+	line-height: 50px;
+	padding: 0 20px;
+	color: inherit;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .menu-link:hover { background: #e9e9E9;; }
 .menu-link:active { background: #b9b9b9; }
 .navicon {
 	z-index: 10;
-  position: relative;
-  left: 246px;
-  width: 14px;
-  padding: 24px 20px 23px 20px;
-  cursor: pointer;
-  -webkit-transform-origin: 32px 24px;
-  -ms-transform-origin: 32px 24px;
-  transform-origin: 32px 24px;
-  
+	position: relative;
+	left: 246px;
+	width: 14px;
+	padding: 24px 20px 23px 20px;
+	cursor: pointer;
+	-webkit-transform-origin: 32px 24px;
+	-ms-transform-origin: 32px 24px;
+	transform-origin: 32px 24px;
+
 
 }
 .navicon:hover {
 	background: #f3f3f3;
 }
 .navicon .burger {
-  position: relative;
+	position: relative;
 	width: 14px;
 	height: 2px;
 	margin: 0;
@@ -193,7 +193,7 @@ nav:hover .navicon {
 }
 .navicon .burger:before,
 .navicon .burger:after {
- display: block;
+	display: block;
 	content: "";
 	width: 14px;
 	margin: 0;
@@ -203,7 +203,7 @@ nav:hover .navicon {
 	z-index: 10;
 }
 .navicon .burger:before {
-  top: -4px;
+	top: -4px;
 }
 
 .navicon .burger:after { 
@@ -382,8 +382,6 @@ nav:hover .navicon {
 }
 .cuisines__card:nth-child(1) {
 	background: url("../img/italian.png") no-repeat 50% 50%;
-	
-	
 }
 .cuisines__card:nth-child(2) {
 	background: url("../img/indian.png") no-repeat 50% 50%;
@@ -439,7 +437,6 @@ nav:hover .navicon {
 .content-statistic {
 	width: 100%;
 	min-height: 126px;
-	
 }
 .stat__card {
 	float: left;
@@ -505,26 +502,98 @@ nav:hover .navicon {
 	text-decoration: none;
 	color: black;
 }
-@media screen  and (max-width: 980px) {
+@media only screen 
+and (max-device-width : 414px) {
+	
+	.main__header {
+		min-height: 100%;
+	}
+
+	.main__baner {
+		color: #ffffff;
+		top:0;
+		left:0;
+		width: 100%;
+		min-height: 500px;
+		margin: 271px 0 0 -250px;
+		text-align: center;
+
+	}
+
 	.iphone__conteiner {
 		display: none;
-
 	}
 	.app-name {
 		background: blue;
 	}
+	.column {
+		width: 100%;
+	}
+	.conteiner {
+		width: 100%;
+	}
 	.get-card {
 		float: none;
 		display: block;
+		margin: 0 auto 30px auto;
+		min-height: 320px;
 	}
 	.get-card:nth-child(1) {
-	float: none;
+		float: none;
 	}
-.get-card:nth-child(2) {
-	display: block;
-}
-.get-card:nth-child(3) {
-	float: none;
-	margin: 0;
-}
+	.get-card:nth-child(2) {
+		display: block;
+	}
+	.get-card:nth-child(3) {
+		float: none;
+		margin: 0 auto;
+	}
+	.get__image {
+		margin: 20px auto 20px auto;
+	}
+	.promo-for-iphone {
+		display: none;
+	}
+	.slider__conteiner {
+		display: none;
+	}
+	
+	.cuisines__card {
+		width: 50%;	
+	}
+	.stat__card {
+		width: 50%;
+
+	}
+	.stat-type {
+		text-align: initial;
+	}
+	.stat__card:nth-child(1) {
+		margin: 8px 0 0 0;
+	}
+	
+	.stat__card:nth-child(2) {
+		margin: 8px 0px 0 0px;
+	}
+	
+	.stat__card:nth-child(3) {
+		margin: 8px 0px 0 0px;
+	}
+	
+	.stat__card:nth-child(4) {
+		margin: 8px 0px 0 0px;
+	}
+	
+	.stat__card:nth-child(5) {
+		margin: 8px 0px 0 0px;
+	}
+	.main__footer {
+		text-align: center;
+	}
+	.copyright {
+		float: none;
+	}
+	.author-link {
+		float: none;
+	}
 }
