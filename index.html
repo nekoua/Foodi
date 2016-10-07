@@ -6,13 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/foodi_css.css">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
 </head>
 <body>
 	<main class="main_conteiner">
 		<header class="main__header clearfix">
 			<div class="column">
 				<div class="conteiner clearfix">
-					<img class="logo" src="img/logo.png" alt="Logo" width="147" height="136">
+					<div class="logo">
+						<img src="img/logo.png" alt="Logo" width="147" height="136">
+					</div>
 					<div class="control__conteiner">
 						<div class="user-and-menu__contener">
 							<nav>
@@ -120,122 +124,146 @@
 								<div class="slider__conteiner clearfix">
 									<div class="column">
 										<div class="conteiner clearfix">
+											<div id="slider">
+												<input type="radio" name="slider" id="slide1" checked="" />
+												<input type="radio" name="slider" id="slide2" />
+												<input type="radio" name="slider" id="slide3" />
 
-										</div>
-									</div>
-								</div>
-								<section class="cuisines clearfix">
-									<div class="column">
-										<div class="conteiner clearfix">
-											<h2 class="cuisines__name">BROWSE BY CUISINES</h2>
-											<hr class="header-line">
-											<div class="cuisines__conteiner">
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-													<i><span>327</span>Recipes</i>
-														<h3>ITALIAN</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>856</span> Recipes</i>
-														<h3>INDIAN</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>27</span>Recipes</i>
-														<h3>FRENCH</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>174</span>Recipes</i>
-														<h3>STEAKHOUSE</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>731</span>Recipes</i>
-														<h3>SEAFOOD</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>237</span>Recipes</i>
-														<h3>SUSHI</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>529</span>Recipes</i>
-														<h3>MEXICAN</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>145</span>Recipes</i>
-														<h3>CHINESE</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>327</span>Recipes</i>
-														<h3>PIZZA</h3>
-													</div>
-												</a>
-												<a class="cuisines__card" href="#">
-													<div class="card-name__block">
-														<i><span>1.437</span>Recipes</i>
-														<h3>AMERICAN</h3>
-													</div>
-												</a>
-											</div>				
-										</div>
-									</div>
-								</section>
-								<section class="content-statistic clearfix">
-									<div class="column">
-										<div class="conteiner clearfix">
-											<div class="stat__card">
-												<span class="stat-numb">23,567</span>
-												<h4 class="stat-type">Recipes Available</h4>
-											</div>
-											<div class="stat__card">
-												<span class="stat-numb">431,729</span>
-												<h4  class="stat-type">Active Users</h4>
-											</div>
-											<div class="stat__card">
-												<span class="stat-numb">892,173</span>
-												<h4 class="stat-type">Positive Rewiews</h4>
-											</div>
-											<div class="stat__card">
-												<span class="stat-numb">56,581</span>
-												<h4 class="stat-type">Photo & Videos</h4>
-											</div>
-											<div class="stat__card">
-												<span class="stat-numb">3,182</span>
-												<h4 class="stat-type">Spices and Herbs</h4>
-											</div>
-										</div>
-									</div>
-								</section>
-								<footer class="main__footer clearfix">
-									<div class="column">
-										<div class="conteiner clearfix">
-											<section class="footer-copyright">
-												<div class="copyright">&#169 2014 Fudi. All Rights Reserved.</div>
-												<div class="author-link">
-													<p>DESIGN BY: 
-														<a class="btn" href="#">WWW.BEKADES.COM</a>
-													</p>
 
-													<p>CREATED BY: <a class="btn" href="#">Mr.Cat</a></p>
+												<div id="slides">
+													<div id="overflow">
+														<div class="inner">
+															<div class="page"><img src="img/slider-ava1.jpg" width="50" height="50"><p>"I am so happy because I found this recipe, and it just made life easier. Thanks so much for sharing!"</p>
+																<i>- Michael Dawson, San Francisco, CA -</i>
+															</div>
+															<div class="page"><img src="img/slider-ava1.jpg" width="50" height="50"><p>"I am so happy because I found this recipe, and it just made life easier. Thanks so much for sharing!"</p>
+																<i>- Michael Dawson, San Francisco, CA -</i></div>
+																<div class="page"><img src="img/slider-ava1.jpg" width="50" height="50"><p>"I am so happy because I found this recipe, and it just made life easier. Thanks so much for sharing!"</p>
+																	<i>- Michael Dawson, San Francisco, CA -</i></div>
+
+																</div>
+															</div>
+														</div>			
+														<div id="active">
+															<label for="slide1"></label>
+															<label for="slide2"></label>
+															<label for="slide3"></label></div>
+													</div>
 												</div>
-											</section>
+											</div>
 										</div>
-									</div>
-								</footer>
-							</main>
-						</body>
-						</html>
+										<section class="cuisines clearfix">
+											<div class="column">
+												<div class="conteiner clearfix">
+													<h2 class="cuisines__name">BROWSE BY CUISINES</h2>
+													<hr class="header-line">
+													<div class="cuisines__conteiner">
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>327</span>Recipes</i>
+																<h3>ITALIAN</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>856</span> Recipes</i>
+																<h3>INDIAN</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>27</span>Recipes</i>
+																<h3>FRENCH</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>174</span>Recipes</i>
+																<h3>STEAKHOUSE</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>731</span>Recipes</i>
+																<h3>SEAFOOD</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>237</span>Recipes</i>
+																<h3>SUSHI</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>529</span>Recipes</i>
+																<h3>MEXICAN</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>145</span>Recipes</i>
+																<h3>CHINESE</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>327</span>Recipes</i>
+																<h3>PIZZA</h3>
+															</div>
+														</a>
+														<a class="cuisines__card" href="#">
+															<div class="card-name__block">
+																<i><span>1.437</span>Recipes</i>
+																<h3>AMERICAN</h3>
+															</div>
+														</a>
+													</div>				
+												</div>
+											</div>
+										</section>
+										<section class="content-statistic clearfix">
+											<div class="column">
+												<div class="conteiner clearfix">
+													<div class="stat__card">
+														<span class="stat-numb">23,567</span>
+														<h4 class="stat-type">Recipes Available</h4>
+													</div>
+													<div class="stat__card">
+														<span class="stat-numb">431,729</span>
+														<h4  class="stat-type">Active Users</h4>
+													</div>
+													<div class="stat__card">
+														<span class="stat-numb">892,173</span>
+														<h4 class="stat-type">Positive Rewiews</h4>
+													</div>
+													<div class="stat__card">
+														<span class="stat-numb">56,581</span>
+														<h4 class="stat-type">Photo & Videos</h4>
+													</div>
+													<div class="stat__card">
+														<span class="stat-numb">3,182</span>
+														<h4 class="stat-type">Spices and Herbs</h4>
+													</div>
+												</div>
+											</div>
+										</section>
+										<footer class="main__footer clearfix">
+											<div class="column">
+												<div class="conteiner clearfix">
+													<section class="footer-copyright">
+														<div class="copyright">&#169; 2014 Fudi. All Rights Reserved.</div>
+														<div class="author-link">
+															<p>DESIGN BY: 
+																<a class="btn" href="#">WWW.BEKADES.COM</a>
+															</p>
+
+															<p>CREATED BY: <a class="btn" href="#">Mr.Cat</a></p>
+														</div>
+													</section>
+												</div>
+											</div>
+										</footer>
+									</main>
+								</body>
+								</html>

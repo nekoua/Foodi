@@ -343,9 +343,99 @@ nav:hover .navicon {
 }
 .slider__conteiner {
 	width: 100%;
-	background: purple;
+	background: #4a3949 url(..//img/Slider-BG.png) no-repeat 50% 50%;
 	min-height: 461px;
 }
+/*-----===== SLIDER BLOCK =====-----*/
+#slider {
+	width: 960px;
+	min-height: 460px;
+	margin: 0 auto;
+	position: relative;
+}
+#slides {
+	padding: 5px;
+}
+.inner {
+	width: 500%;
+}
+.inner:after {
+	content: '';
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.page {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.page img {
+	width: 103px;
+	height: 103px;
+	padding: 5px;
+	background: rgba(255,255,255,.5);
+	margin: 75px auto 10px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+}
+.page p {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 46px;
+	letter-spacing: .4px;
+	margin: 0 0 10px 0;
+	color: #898189;
+}
+.page i {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #898189;
+}
+#overflow {
+	overflow: hidden;
+}
+#slider input {display: none;}
+
+#slide1:checked ~ #slides .inner { margin-left: 0; }
+#slide2:checked ~ #slides .inner { margin-left: -100%; }
+#slide3:checked ~ #slides .inner { margin-left: -200%; }
+#slide4:checked ~ #slides .inner { margin-left: -300%; }
+#slide5:checked ~ #slides .inner { margin-left: -400%; }
+
+#active {
+	text-align: center;
+	margin-top: 23px;
+}
+#active label {
+	width: 10px;
+	height: 10px;
+	margin: 0 5px; 
+	background-color: #7a6e79;
+	display: inline-block;
+	cursor: pointer;
+	  border-radius: 50%;
+}
+#active label:hover {
+	background-color: #aaaaaa;
+}
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) {
+	background-color: #ffffff;
+}
+#slides .inner {
+	-webkit-transition: all 0.8s ease-in-out;
+		 -moz-transition: all 0.8s ease-in-out;
+			-ms-transition: all 0.8s ease-in-out;
+			 -o-transition: all 0.8s ease-in-out;
+					transition: all 0.8s ease-in-out;
+}
+/*-----===== SLIDER END =====-----*/
 .cuisines {
 	width: 100%;
 	background: white;
@@ -359,10 +449,8 @@ nav:hover .navicon {
 	letter-spacing: .9px;
 	margin: 20px 0 -1px 0;
 }
-
 .cuisines .conteiner {
 	width: 100%;
-	
 }
 .cuisines__conteiner {
 	margin: 39px 0 50px 0;
@@ -502,9 +590,168 @@ nav:hover .navicon {
 	text-decoration: none;
 	color: black;
 }
+
 @media only screen 
-and (max-device-width : 414px) {
-	
+and (max-device-width : 720px) {
+	.promo-for-iphone {
+		display: none;
+	}
+	.slider__conteiner {
+		display: none;
+	}	
+	.column	{
+		width: 100%;
+	}
+	.conteiner {
+		width: 100%;
+	}
+	.main_conteiner {
+		min-height: 320px;
+	 	max-width: 700px;
+	}
+	.main__header {
+		width: 100%;
+		background: url("../img/main-image.jpg") no-repeat 50% 50%;
+	}
+	.logo {
+		display: block;
+		position: initial;
+		margin: 0 40% 0 40%;
+	}
+	.control__conteiner {
+		display: none;
+	}
+	.user-and-menu__contener {
+		width: 100%;
+	}
+	.user-block {
+		display: none;
+	}
+	.menu-conteiner {
+		display: none;
+	}
+	.slogan-one {
+		font-size: 36px;
+		line-height: 30px;
+		font-family: 'Times New Roman', sans-serif;
+		font-style: italic;
+		font-weight: 700;	
+		margin: 10px auto 0px auto;
+		letter-spacing: 1.8px;
+		text-shadow: 1px 0px 90px rgba(0, 0, 0, 1);
+	}
+	.main__baner b {
+		font-size: 50px;
+		display: block;
+		margin: 0px auto 20px auto;
+		letter-spacing: 5px;
+		text-shadow: 1px 0px 90px rgba(0, 0, 0, 1);		
+	}
+	.btn-baner {
+		margin: 0 auto 38px auto;
+		display: block;
+		width: 200px;
+		border: 3px solid #ffffff;
+		border-radius: 4px;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 18px 36px 24px 39px;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	.btn-baner:hover {
+		background: #ffffff;
+		color: black;
+	}
+	.slogan-two {
+		font-size: 14px;
+		letter-spacing: .7px;
+	}
+	.slogan-two a {
+		color: #ffffff;
+		font-weight: bold;
+	}
+	.main__baner {
+		color: #ffffff;
+		max-width: 200px;
+		text-align: center;
+		position: initial;
+	 	margin: 250px auto;
+	}
+	.gets {
+		background: pink;
+  }
+	.get-card {
+		text-align: center;
+		max-width: 300px;
+		min-height: 100px;
+		max-height: 180px;		
+		margin: 0 auto 0 auto;
+	}
+	.get-card:nth-child(1) {
+		float: none;
+		margin-top: 20px;
+	}
+	.get-card:nth-child(2) {
+		display: block;
+	}
+	.get-card:nth-child(3) {
+		float: none;
+		margin: 0 auto 0 auto;	
+	}	
+	.get__image {
+		width: 74px;
+		height: 74px;
+		margin: 0px auto 8px auto;
+		border: 2px solid #000000;
+		border-radius: 100%;
+	}
+	.get-card:nth-child(1) .get__image {
+		background: url("../img/icon/burger.png") no-repeat 50% 50%;
+	}
+	.get-card:nth-child(2) .get__image {
+		background: url("../img/icon/money.png") no-repeat 50% 50%;
+	}
+	.get-card:nth-child(3) .get__image {
+		background: url("../img/icon/sheff.png") no-repeat 50% 50%;
+	}
+	.card-name {
+		margin: 0 0 4px 0;
+		font-size: 16px;
+		letter-spacing: .9px;
+		text-align: center;
+	}
+	.header-line {
+		width: 88px;
+		height: 1px;
+		border: none;
+		background-color: #f57365;
+	}
+	.get-card .header-line {
+		margin: 0 auto 5px auto;
+	}
+	.card-discrition {
+		margin: 0 0 20px 0;
+	}
+	.get-card p {
+		font-size: 12px;
+		line-height: 16px;
+		margin: 0;
+		letter-spacing: .6px;
+	}
+	.get-card p:nth-child(2) {
+		letter-spacing: .5px;
+		word-spacing: .1px;
+	}
+	.get-card p:nth-child(3) {
+		text-align: center;
+	}
+
+
+
+	/*.main_conteiner {
+		background: yellow;
+	}
 	.main__header {
 		min-height: 100%;
 	}
@@ -595,5 +842,5 @@ and (max-device-width : 414px) {
 	}
 	.author-link {
 		float: none;
+		}*/
 	}
-}
